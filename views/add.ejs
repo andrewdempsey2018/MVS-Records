@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Add</h1>
     <ul>
         <li><a href="/">back</a></li>
     </ul>
+
+    <div>
+        <form action="/add_cart" method="POST">
+            <label for="title">Game title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="notes">Notes:</label>
+            <input type="text" id="notes" name="notes" required>
+            <button>Submit</button>
+        </form>
+    </div>
+
 </body>
+
 </html>
