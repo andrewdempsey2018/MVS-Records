@@ -7,7 +7,7 @@ const view = (req, res) => {
 }
 
 const add = (req, res) => {
-    res.render('iadd');
+    res.render('add');
 }
 
 module.exports = {
