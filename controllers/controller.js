@@ -5,8 +5,22 @@ const index = (req, res) => {
     res.render('index');
 }
 
+//const view = (req, res) => {
+//    res.render('view');
+//}
+
 const view = (req, res) => {
-    res.render('view');
+    Cart.find().sort({
+            createdAt: -1
+        })
+        .then((result) => {
+            res.render('view', {
+                carts: result
+            });
+        })
+        .catch((err) => {
+            console.log(err);
+        })
 }
 
 const add = (req, res) => {
