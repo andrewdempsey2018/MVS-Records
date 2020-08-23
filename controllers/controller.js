@@ -27,6 +27,10 @@ const add = (req, res) => {
     res.render('add');
 }
 
+const about = (req, res) => {
+    res.render('about');
+}
+
 const add_cart = (req, res) => {
     cart = new Cart(req.body);
 
@@ -58,4 +62,5 @@ module.exports = {
     add,
     add_cart,
     single,
+    about,
 }
