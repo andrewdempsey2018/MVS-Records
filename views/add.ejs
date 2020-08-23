@@ -11,10 +11,54 @@
 
     <div>
         <form action="/add_cart" method="POST">
-            <label for="title">Game title:</label>
-            <input type="text" id="title" name="title" required>
-            <label for="notes">Notes:</label>
-            <input type="text" id="notes" name="notes" required>
+
+            <div>
+                <label for="title">Game title:</label>
+                <select name="title" id="title">
+                    <option value="Fatal Fury">Fatal Fury</option>
+                    <option value="Fatal Fury 2">Fatal Fury 2</option>
+                    <option value="Fatal Fury Special">Fatal Fury Special</option>
+                    <option value="Fatal Fury 3">Fatal Fury 3</option>
+                    <option value="Metal Slug">Metal Slug</option>
+                    <option value="Metal Slug 2">Metal Slug 2</option>
+                    <option value="Metal Slug X">Metal Slug X</option>
+                    <option value="Metal Slug 3">Metal Slug 3</option>
+                    <option value="Metal Slug 4">Metal Slug 4</option>
+                    <option value="Galaxy Fight">Galaxy Fight</option>
+                    <option value="Overtop">Overtop</option>
+                    <option value="Neo Drift Out">Neo Drift Out</option>
+                    <option value="Puzzle Bobble">Puzzle Bobble</option>
+                    <option value="Aero Fighters 2">Aero Fighters 2</option>
+                    <option value="Alpha Mission 2">Alpha Mission 2</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="serial">Serial:</label>
+                <input type="number" id="serial" name="serial" min="1" max="50000">
+            </div>
+
+            <div>
+                <label for="location">Location:</label>
+                <select name="location" id="location">
+                    <option value="USA">USA</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Japan">Japan</option>
+                    <option value="UK">UK</option>
+                    <option value="Sweden">Sweden</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="pictures">Pictures:</label>
+                <input type="pictures" id="notes" name="pictures" required>
+            </div>
+
+            <div>
+                <label for="notes">Notes:</label>
+                <input type="text" id="notes" name="notes" required>
+            </div>
+
             <button>Submit</button>
         </form>
     </div>

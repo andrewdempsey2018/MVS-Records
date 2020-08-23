@@ -13,6 +13,21 @@ const cartSchema = new Schema({
         required: true
     },
 
+    serial: {
+        type: Number,
+        required: true
+    },
+
+    location: {
+        type: String,
+        required: true
+    },
+
+    pictures: {
+        type: String,
+        required: true
+    },
+
     notes: {
         type: String,
         required: true
