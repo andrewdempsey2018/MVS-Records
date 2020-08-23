@@ -12,9 +12,10 @@
     <div>
         <% if(carts.length > 0) { %>
         <% carts.forEach(cart => { %>
-        <p><%= cart.title %><p>
-                <% }) %>
-                <% } %>
+            <p><%= cart.title %><p>
+            <a class="single" href="/<%= cart._id %>">More details</a>
+        <% }) %>
+        <% } %>
     </div>
 
 </body>

@@ -39,9 +39,23 @@ const add_cart = (req, res) => {
         })
 }
 
+const single = (req, res) => {
+    const id = req.params.id;
+    Cart.findById(id)
+        .then(result => {
+            res.render('single', {
+                cart: result
+            });
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+}
+
 module.exports = {
     index,
     view,
     add,
     add_cart,
+    single,
 }
