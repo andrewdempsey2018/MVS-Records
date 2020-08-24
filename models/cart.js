@@ -23,7 +23,17 @@ const cartSchema = new Schema({
         required: true
     },
 
-    pictures: {
+    front_picture: {
+        type: String,
+        required: true
+    },
+
+    back_picture: {
+        type: String,
+        required: true
+    },
+
+    label_picture: {
         type: String,
         required: true
     },
