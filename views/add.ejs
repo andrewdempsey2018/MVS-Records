@@ -10,67 +10,86 @@
     </ul>
 
     <div>
-        <form action="/add_cart" method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card card-signin my-5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Add a cart</h5>
+                            <form class="form-signin" action="/add_cart" method="POST">
+                                <div class="form-label-group">
+                                    <label for="title">Game title:</label>
+                                    <select name="title" id="title" class="form-control">
+                                        <option value="Fatal Fury">Fatal Fury</option>
+                                        <option value="Fatal Fury 2">Fatal Fury 2</option>
+                                        <option value="Fatal Fury Special">Fatal Fury Special</option>
+                                        <option value="Fatal Fury 3">Fatal Fury 3</option>
+                                        <option value="Metal Slug">Metal Slug</option>
+                                        <option value="Metal Slug 2">Metal Slug 2</option>
+                                        <option value="Metal Slug X">Metal Slug X</option>
+                                        <option value="Metal Slug 3">Metal Slug 3</option>
+                                        <option value="Metal Slug 4">Metal Slug 4</option>
+                                        <option value="Galaxy Fight">Galaxy Fight</option>
+                                        <option value="Overtop">Overtop</option>
+                                        <option value="Neo Drift Out">Neo Drift Out</option>
+                                        <option value="Puzzle Bobble">Puzzle Bobble</option>
+                                        <option value="Aero Fighters 2">Aero Fighters 2</option>
+                                        <option value="Alpha Mission 2">Alpha Mission 2</option>
+                                    </select>
+                                </div>
 
-            <div>
-                <label for="title">Game title:</label>
-                <select name="title" id="title">
-                    <option value="Fatal Fury">Fatal Fury</option>
-                    <option value="Fatal Fury 2">Fatal Fury 2</option>
-                    <option value="Fatal Fury Special">Fatal Fury Special</option>
-                    <option value="Fatal Fury 3">Fatal Fury 3</option>
-                    <option value="Metal Slug">Metal Slug</option>
-                    <option value="Metal Slug 2">Metal Slug 2</option>
-                    <option value="Metal Slug X">Metal Slug X</option>
-                    <option value="Metal Slug 3">Metal Slug 3</option>
-                    <option value="Metal Slug 4">Metal Slug 4</option>
-                    <option value="Galaxy Fight">Galaxy Fight</option>
-                    <option value="Overtop">Overtop</option>
-                    <option value="Neo Drift Out">Neo Drift Out</option>
-                    <option value="Puzzle Bobble">Puzzle Bobble</option>
-                    <option value="Aero Fighters 2">Aero Fighters 2</option>
-                    <option value="Alpha Mission 2">Alpha Mission 2</option>
-                </select>
+                                <div>
+                                    <label for="serial">Serial:</label>
+                                    <input type="number" class="form-control" id="serial" name="serial" min="1"
+                                        max="50000">
+                                </div>
+
+                                <div>
+                                    <label for="location">Location:</label>
+                                    <select name="location" class="form-control" id="location">
+                                        <option value="USA">USA</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="UK">UK</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="front_picture">Front picture:</label>
+                                    <input type="front_picture" class="form-control" id="notes" name="front_picture"
+                                        required>
+                                </div>
+
+                                <div>
+                                    <label for="back_picture">Back picture:</label>
+                                    <input type="back_picture" class="form-control" id="notes" name="back_picture"
+                                        required>
+                                </div>
+
+                                <div>
+                                    <label for="label_picture">Label picture:</label>
+                                    <input type="label_picture" class="form-control" id="notes" name="label_picture"
+                                        required>
+                                </div>
+
+                                <div>
+                                    <label for="notes">Notes:</label>
+                                    <input type="text" class="form-control" id="notes" name="notes" required>
+                                </div>
+
+                                <button class="btn btn-dark btn-lg btn-block text-uppercase">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div>
-                <label for="serial">Serial:</label>
-                <input type="number" id="serial" name="serial" min="1" max="50000">
-            </div>
 
-            <div>
-                <label for="location">Location:</label>
-                <select name="location" id="location">
-                    <option value="USA">USA</option>
-                    <option value="Brazil">Brazil</option>
-                    <option value="Japan">Japan</option>
-                    <option value="UK">UK</option>
-                    <option value="Sweden">Sweden</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="front_picture">Front picture:</label>
-                <input type="front_picture" id="notes" name="front_picture" required>
-            </div>
-
-            <div>
-                <label for="back_picture">Back picture:</label>
-                <input type="back_picture" id="notes" name="back_picture" required>
-            </div>
-
-            <div>
-                <label for="label_picture">Label picture:</label>
-                <input type="label_picture" id="notes" name="label_picture" required>
-            </div>
-
-            <div>
-                <label for="notes">Notes:</label>
-                <input type="text" id="notes" name="notes" required>
-            </div>
-
-            <button>Submit</button>
-        </form>
     </div>
 
 </body>
